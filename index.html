@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>MOKEPON</title>
+</head>
+<body>
+    <script defer src="js/cod.js"></script>
+
+    <h1>MOKEPON 🔥💧🌎</h1>
+
+    <section id="seleccionar-mascota">
+    <h2>Elige tu mascota</h2>
+
+    <label for="Hipodoge">Hipodoge</label>
+    <input type="radio" name="mascota" id="Hipodoge"/><br>
+
+    <label for="Capipepo">Capipepo</label>
+    <input type="radio" name="mascota" id="Capipepo"/><br>
+
+    <label for="Ratigueya">Ratigueya</label>
+    <input type="radio" name="mascota" id="Ratigueya"/><br>
+
+    <button id="boton-mascota" style="margin-top: 15px;">Seleccionar</button>
+</section>
+
+
+ <div class="battle-area">
+    <div class="mascota-box">
+        <p><strong>Tu mascota:</strong> <span id="mascota-jugador"></span> - <strong>Vidas:</strong> <span id="vidas-jugador">3</span></p>
+        <div class="imagen-contenedor">
+            <img id="imagen-jugador" class="mascota-img" src="" alt="Mascota jugador" />
+        </div>
+    </div>
+    <div class="mascota-box">
+        <p><strong>Mascota del enemigo:</strong> <span id="mascota-enemigo"></span> - <strong>Vidas:</strong> <span id="vidas-enemigo">3</span></p>
+        <div class="imagen-contenedor">
+            <img id="imagen-enemigo" class="mascota-img" src="" alt="Mascota enemigo" />
+        </div>
+    </div>
+</div>
+    <h2>Elige tu ataque</h2>
+    <p>
+        <button id="Fuego">Fuego 🔥</button>
+        <button id="Agua">Agua 💧</button>
+        <button id="Tierra">Tierra 🌎</button>
+    </p>
+
+    <section id="mensajes">
+        <!-- Aquí aparecerán los mensajes de batalla -->
+    </section>
+
+    <section id="reiniciar">
+        <button id="button-reiniciar" onclick="location.reload()">Reiniciar</button>
+    </section>
+
+    <footer>
+        Tecnológico Nacional de México campus Pachuca - Programación Web - Evaluación Tema 1 - Edgar Hernandez Mendoza No. de 21200654
+    </footer>
+</body>
+</html>
